@@ -8,7 +8,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/login', function (req, res) {
- if ( req.query.password === secret.password ) {
+ if ( req.body.password === secret.password ) {
    res.redirect('/secret_page');
  }
  else {
