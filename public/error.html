@@ -1,0 +1,22 @@
+<!DOCTYPE>
+<html>
+<head>
+</head>
+<body>
+<h3>The username and password do not match!</h3>
+<h2>Log in again: </h2>
+<form action = "/session" method = "POST">
+ <input type="text" name="username" placeholder="username">
+ <input type="password" name = "password">
+ <button>login</button>
+</form>
+<h3>Not a returning user?</h3>
+<h2>create an account:</h2>
+<form action= "/user" method= "POST">
+  <input type= "text" name="username" placeholder="Username">
+  <input type="password" name="password" placeholder= "password">
+  <input type="password" name="confirm" placholder="confirm password">
+  <button>submit!</button>
+</form>
+</body>
+</html>
